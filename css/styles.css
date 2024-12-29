@@ -1,0 +1,712 @@
+:root {
+    --color-border: #000;
+    --color-grey: #848484;
+    --color-opacity: rgba(255, 255, 255, 0);
+    --color-title: #442200;
+    --color-dark: #32557f;
+    --color-light: #f0f0f0;
+    --color-white: #fff;
+    --color-background: #ccc;
+    --color-lightblue: lightblue;
+    --color-lightgreen: #ccffcc;
+    --color-lightpink: #ffcccc;
+    --color-pink: rgb(238, 140, 157);
+    --color-green: #0f0;
+    --color-yellow: yellow;
+
+}
+
+/* ================================================ */
+/* ================ ОСНОВНЫЕ СТИЛИ ================ */
+/* .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */  
+
+/* ШРИФТ */
+.balsamiq-sans-regular {
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.balsamiq-sans-bold {
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+}  
+.balsamiq-sans-regular-italic {
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 400;
+    font-style: italic;
+}  
+.balsamiq-sans-bold-italic {
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.pacifico-regular {
+    font-family: "Pacifico", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+@media screen and (min-width: 480px) {
+    .container {
+        width: 448px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 752px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}  
+
+/* Заголовки, параграф, списки, ссылки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}  
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}  
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+/* ============ End of ОСНОВНЫЕ СТИЛИ ============== */
+/* ================================================ */
+
+
+
+
+/* ================================================== */
+/* ================= СТИЛИ в HEADER ================= */
+header {
+    background: linear-gradient(to top, rgb(79, 206, 199), 20%, rgb(127, 241, 207));
+}
+.container-header,
+.container-footer {
+    width: 100%;
+    height: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to top, rgb(238, 166, 72), 20%, rgb(240, 241, 127));
+}
+.container-header {
+    display: flex;
+    align-items: center;
+}
+.main-image {
+    width: 60px;
+    margin: 0 16px;
+}
+.main-menu {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* padding: 16px;     */
+}
+.main-menu a {
+    color: var(--color-title);
+}
+.header-img {
+    width: 50px;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.title-list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    padding: 24px;
+}
+
+/* Стили кнопки "Головна стрінка", начало */
+.menu-item {
+    width: 150px;
+    border: solid 2px black;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    background-color: orange;
+    font-size: 18px;
+    margin-left: 16px;
+}
+.menu-item:hover {
+    box-shadow: inset 0px 0px 8px rgba(0,0,0,0.9)
+}
+
+.main-menu-title {
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-img {
+    width: 50px;
+    height: 100%;
+    padding: 8px;
+    margin: 8px 8px 8px auto;
+}
+
+/* Стили книпки "Головна стрінка", кінець */
+@media screen and (min-width: 480px) {
+    .container-header,
+    .container-footer {
+        width: 448px;
+    }
+    .title-list {
+        font-size: 24px;
+    }
+    .header-img {
+        margin-left: 160px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container-header,
+    .container-footer {
+        width: 752px;
+    }
+    .header-img {
+        margin-left: 460px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container-header,
+    .container-footer {
+        width: 1200px;
+    }
+    .header-img {
+        margin-left: 900px;
+    }
+}
+/* ============ End of СТИЛИ в HEADER =============== */
+/* ================================================== */
+
+
+
+
+/* ================================================ */
+/* ================= СТИЛИ в MAIN ================= */
+
+/* ----------- ГЛАВНАЯ СТРАНИЦА, начало ------------ */
+.section-background {
+    background: linear-gradient(to top, rgb(238, 208, 72), 10%, rgb(240, 241, 127));
+}
+
+.body-main-color {
+    background: linear-gradient(to top, rgb(79, 206, 199), 20%, rgb(127, 241, 207));
+}
+
+.main-title {
+    text-align: center;
+    font-size: 24px;
+    padding: 16px;
+    color: var(--color-title);
+}
+.main-subtitle {
+    font-weight: 100;
+    color: var(--color-grey);
+}
+
+.main-title-clas {
+    text-align: center;
+    font-size: 32px;
+    padding: 16px;
+    color: var(--color-title);
+}
+
+.tests {
+    padding: 16px;
+}
+
+.quwestion-list {
+    display: block;
+    width: 88%;
+    border: solid 2px black;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.quwestion-list:hover {
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.9)
+}
+.paragraph-main {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 55%;
+    margin: 8px;
+    padding: 8px;  
+    color: var(--color-title);
+}
+.paragraph-main-list,
+.paragraph-main-link {
+    padding: 16px 4px;
+    margin: 4px;
+}
+.paragraph-main-link {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+.paragraph-main-link:hover {
+    border-radius: 16px;
+    color: var(--color-title);
+}
+@media screen and (min-width: 480px) {
+    .main-title {
+        font-size: 32px;
+        padding: 16px;
+    }
+    .quwestion-list {
+        width: 380px;
+    }
+    .paragraph-main {
+        font-size: 32px;
+    }
+    .paragraph-main-link {
+        font-size: 24px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .quwestion-list {
+        width: 600px;
+    }
+    .paragraph-main {
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .quwestion-list {
+        width: 800px;
+    }
+}
+/* ----------- ГЛАВНАЯ СТРАНИЦА, конец ------------ */
+
+/* Уровень "Викторина", начало */
+.answers {
+    padding-bottom: 16px;
+}
+.answers-list {
+    display: block;
+}
+.right-answer,
+.wrong-answer {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px;
+}
+.material-bottom {
+    width: auto;
+    background: var(--color-dark);
+    border-radius: 10px;
+    box-shadow: 0 15px 0 0 darken(var(--color-dark), 5%), 0 0 20px 0 #555;
+    transition: all .2s;
+    position: relative;
+    top: 0;
+    color: var(--color-white);
+    padding: 16px;
+}
+.material-bottom:active {
+    top: 8px;
+    box-shadow: 0 8px 0 0 darken(var(--color-dark), 5%);
+}
+.material-bottom:hover {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.9)
+}
+
+/* Стили для скрытия и подсветки */
+.hidden {
+    display: none;
+}      
+.right-highlight {
+    background-color: var(--color-lightgreen); /* Светло-зелёный */
+}      
+.wrong-highlight {
+    background-color: var(--color-lightpink); /* Светло-розовый */
+}
+.right-highlight-buttom {
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
+}
+.wrong-highlight-buttom {
+    background-color: var(--color-pink);
+    /* color: var(--color-dark); */
+}
+      
+/* Чтобы было красивее:
+    - Сделаем отступы для <p> "Правильно!" и "Не правильно...".
+    - Небольшие стили для кнопок (необязательно).
+*/
+/* .tests2 {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+} */
+/* .quwestion {
+    margin-bottom: 30px;
+} */
+/* .paragraph {
+    font-weight: bold;
+} */
+.paragraph-victory {
+    margin: 8px 32px;
+}
+button {
+    cursor: pointer;
+    margin: 5px;
+}
+/* Уровень "Викторина", конец */
+
+/* Уровень "Найти пару", начало */
+.paragraph {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 8px;
+    padding: 8px;
+    color: var(--color-dark);
+}
+.blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 16px 0 32px;
+}
+.block {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background-color: var(--color-lightblue);
+    border: 2px solid var(--color-dark);
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 70px;
+    text-align: center;
+}
+.block:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .3);
+}
+.message-para,
+.message-classification {
+    display:none; 
+    color: green; 
+    font-size: 20px; 
+    font-weight: bold;
+    margin: 0 16px;
+    padding: 0 16px 32px;
+}
+.selected {
+    background-color: var(--color-yellow);
+}
+.matched {
+    background-color: var(--color-green);
+}
+@media screen and (min-width: 480px) {
+    .answers-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .paragraph {
+        font-size: 24px;
+    }
+    .block {
+        font-size: 24px;
+        width: 100px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .block {
+        width: 120px;
+    }
+}
+/* Уровень "Найти пару", конец */
+
+/* Уровень "Встановіть послідовність блоків", начало */
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+/* section.container {
+    max-width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    position: relative;
+} */
+  /* h1 {
+    text-align: center;
+  } */
+  /* .paragraph {
+    margin-bottom: 1rem;
+  } */
+  /* Сообщение "Правильно!" — по умолчанию скрыто */
+  #message-order {
+    display: none;
+    color: green;
+    font-weight: bold;
+    /* margin: 1rem 0; */
+    padding: 24px;
+}
+
+  /* Родительский контейнер, внутри которого находятся элементы */
+#shuffle-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 2px solid var(--color-grey);
+    border-radius: 16px;
+    padding: 16px;
+    min-height: 200px;
+    position: relative;
+}
+
+  /* Стили для блоков шагов */
+.draggable-block {
+    background: #f0f0f0;
+    padding: 12px;
+    cursor: grab; /* курсор для ПК */
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    user-select: none;
+    touch-action: none; /* для мобильной версии, чтобы не мешал скролл */
+
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+}
+.draggable-block:hover,
+.draggable-block:focus {
+    background: var(--color-lightblue);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .3);
+}
+@media screen and (min-width: 768px) {
+    .draggable-block {
+        font-size: 24px;
+    }
+}
+
+  /* Когда элементы стоят в правильном порядке – окрашиваем в зелёный */
+.correct-order {
+    background-color: #c7ffc7 !important;
+}
+
+  /*
+    Дополнительно: стили активного перетаскивания 
+    (чтобы визуально показывать, что элемент подхвачен или цель "подсвечена")
+  */
+.drag-over {
+    border: 2px dashed #00f;
+}
+.draggable-block:active {
+    cursor: grabbing;
+}
+/* Уровень "Встановіть послідовність блоків", конец */
+
+/* Уровень "Класифікація", начало */
+/* Контейнеры для категорий */
+.category-container {
+    border: 2px dashed var(--color-grey);
+    border-radius: 8px;
+    width: 250px;
+    min-height: 150px;
+    margin: 16px;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.category-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+  /* Стиль для перетаскиваемых элементов */
+.draggable-item {
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: move;
+    width: fit-content;
+
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.draggable-item-img {
+    border: 1px solid #666;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: move;
+    max-width: 240px;
+
+    font-family: "Balsamiq Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+.draggable-item:hover,
+.draggable-item:focus,
+.draggable-item-img:hover,
+.draggable-item-img:focus {
+    background-color: var(--color-lightblue);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .3);
+}
+
+.div-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+  /* Верная и неверная категория */
+.draggable-item.correct,
+.draggable-item-img.correct {
+    background-color: var(--color-lightgreen); /* Зеленый, если верно */
+}
+.draggable-item.incorrect,
+.draggable-item-img.incorrect {
+    background-color: var(--color-lightpink); /* Красный, если неверно */
+}
+
+  /* Контейнер для всех элементов */
+.items-container {
+    border: 2px solid var(--color-grey);
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 220px;
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 16px;
+}
+.items-container:hover {
+    box-shadow: inset 0px 0px 4px rgba(0,0,0,0.9)
+}
+
+.title-classification {
+    color: var(--color-title);
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.category-image-title-container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.category-image-title {
+    display: flex;
+    flex-wrap: wrap;
+}
+.category-image-title img {
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 480px) {
+    .draggable-item,
+    .draggable-item-img
+    .title-classification {
+        font-size: 24px;
+    }
+}
+/* Уровень "Класифікація", кінець */
+
+/* Уровень "Класифікація-2", начало */
+.drop-zone {
+    width: 200px;
+    min-height: 200px;
+    border: 2px dotted #999;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+/* Стили для всплывающего сообщения */
+/* #message-classification {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid green;
+    background-color: #d4ffd4;
+    width: fit-content;
+} */
+              
+/* Стили для перетаскиваемого клона на мобильном */
+.drag-clone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* чтобы пальцем можно было «касаться» элементов под клоном */
+    opacity: 0.8;
+    z-index: 9999;
+    border: 2px solid #999;
+    background: #f9f9f9;
+}
+/* Уровень "Класифікація-2", кінець */
+
+/* ============ End of СТИЛИ в MAIN =============== */
+/* ================================================ */
+
+
+
+
+/* ================================================ */
+/* ================= СТИЛИ в FOOTER ================= */
+footer {
+    margin-top: -8px;
+    background: linear-gradient(to top, rgb(79, 206, 199), 20%, rgb(127, 241, 207));
+}
+.container-footer {
+    background: linear-gradient(to bottom, rgb(230, 153, 53), 20%, rgb(238, 209, 79));
+}
+
+.paragraph-footer {
+    font-size: 18px;
+    margin: 8px;
+    padding: 24px;
+    color: var(--color-dark);
+}
+/* ============ End of СТИЛИ в FOOTER =============== */
+/* ================================================ */
