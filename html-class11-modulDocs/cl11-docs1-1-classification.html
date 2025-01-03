@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вправи інтерактивні</title>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Kablammo&family=Pacifico&family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="./img/favicon_LGA84.ico">
+</head>
+<body>
+
+    <header>
+        <div class="container-header">
+            <div class="main-menu">
+                <a href="../index.html" class="link menu-item balsamiq-sans-bold">Головна сторінка</a>
+                <img src="https://img.freepik.com/premium-photo/3d-laptop-folder-concept-3d-illustration_441797-2417.jpg" alt="Документи та папери" width="50px" class="header-img">
+            </div>
+            <!-- <ul class="main-menu">
+                <li class="list balsamiq-sans-bold"><a href="../index.html" class="link menu-item">Головна сторінка</a></li>
+            </ul> -->
+        </div>
+    </header>
+
+    <main class="body-main-color">
+        <section class="container section-background">
+            <h1 class="main-title pacifico-regular">№ 1-1. "Класифікація документів"</h1>
+            <p class="paragraph balsamiq-sans-bold">Завдання: Класифікація.<br>Перетягніть в правильну категорію.</p>
+            
+            <!-- <p id="message-classification" class="message-classification balsamiq-sans-bold">Правильно! &#9989;</p> -->
+
+                        <!-- <h1>Игра "Классификация"</h1> -->
+
+            <!-- Блок, где изначально размещены все элементы -->
+            <div class="items-container" id="itemsContainer">
+              <h2 class="title-classification balsamiq-sans-bold">Перетягніть в правильну категорію:</h2>
+              <!-- Элементы добавятся через JavaScript в случайном порядке -->
+              <div class="div-container" id="divContainer"></div>
+            </div>
+          
+            <div>
+                <!-- Категория "За змістом" -->
+                <div class="category-container"
+                    id="category-1"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За змістом</h2>
+                </div>
+          
+                <!-- Категория "За походженням" -->
+                <div class="category-container"
+                    id="category-2"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За походженням</h2>
+                </div>
+          
+                <!-- Категория "За терміновістю" -->
+                <div class="category-container"
+                    id="category-3"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За терміновістю</h2>
+                </div>
+
+                <!-- Категория "За доступністю" -->
+                <div class="category-container"
+                    id="category-4"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За доступністю</h2>
+                </div>
+              
+                <!-- Категория "За формою" -->
+                <div class="category-container"
+                    id="category-5"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За формою</h2>
+                </div>
+              
+                <!-- Категория "За типом носіїв" -->
+                <div class="category-container"
+                    id="category-6"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За типом носіїв</h2>
+                </div>
+
+                <!-- Категория "За термінами зберігання" -->
+                <div class="category-container"
+                    id="category-7"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За термінами зберігання</h2>
+                </div>
+      
+                <!-- Категория "За характером інформаційних зв’язків" -->
+                <div class="category-container"
+                    id="category-8"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За характером інформаційних зв’язків</h2>
+                </div>
+      
+                <!-- Категория "За назвою" -->
+                <div class="category-container"
+                    id="category-9"
+                    ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <h2 class="balsamiq-sans-bold">За назвою</h2>
+                </div>
+
+            </div>
+
+            <p id="message-classification" class="message-classification balsamiq-sans-bold">Правильно! &#9989;</p>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="container-footer">
+            <p class="paragraph-footer balsamiq-sans-bold-italic">Інформатика</p>
+        </section>
+    </footer>
+
+    <!-- <script src="../js/cl09-t3-1-classification.js" defer></script> -->
+    <script src="../js/cl11-docs1-1-classification.js" defer></script>
+</body>
+</html>
