@@ -152,7 +152,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     font-size: 18px;
-    padding: 24px;
+    padding: 24px 12px 24px 4px;
 }
 
 /* Стили кнопки "Головна стрінка", начало */
@@ -189,6 +189,7 @@ header {
     }
     .title-list {
         font-size: 24px;
+        padding: 24px 24px 24px 24px;
     }
     .header-img {
         margin-left: 160px;
